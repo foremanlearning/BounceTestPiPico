@@ -66,7 +66,7 @@ void setup() {
 void loop() {
   // Check if the button is pressed and a test is not running
   if (digitalRead(buttonPin) == LOW && !testRunning) {
-    delay(10);  // Short delay for debounce
+    delay(0);  // Short delay for debounce
     // Confirm the button is still pressed after the debounce delay
     if (digitalRead(buttonPin) == LOW) {
       startTest();  // Start a new test
